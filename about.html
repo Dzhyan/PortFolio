@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="./resources/CSS/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
-  <meta charset="UTF-8">
-  <title>JTN Web Development</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About JTN</title>
+
+  <link rel="stylesheet" href="./resources/CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <div>
-      <nav class="navdesktop">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT JTN</a></li>
-          <li><a href="work.html">WORK</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navdesktop">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html" class="active">ABOUT JTN</a></li>
+        <li><a href="work.html">WORK</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
   </header>
 
-
   <main class="about">
-    <h3>something about moi</h3>
-
-        <p> Put a picture here? </p>
-
-
-
+    <section class="about-content">
+      <img src="./resources/images/JTN.jpg" alt="About JTN" class="about-image" />
+      <div class="about-text">
+        <h3>Who We Are</h3>
+        <p>
+          JTN Web Development is a creative studio focused on delivering high-performance, visually engaging websites.
+          With a passion for innovation and precision, we build experiences that are as technically sound as they are visually distinctive.
+        </p>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <p>© JTN</p>
+  </footer>
 </body>
-    
+</html>

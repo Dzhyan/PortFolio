@@ -1,35 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="./resources/CSS/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
-  <meta charset="UTF-8">
-  <title>JTN Web Development</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JTN Work Showcase</title>
+
+  <link rel="stylesheet" href="./resources/CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+  
+
+
   <header>
-    <div>
-      <nav class="navdesktop">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT JTN</a></li>
-          <li><a href="work.html">WORK</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navdesktop">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT JTN</a></li>
+        <li><a href="work.html" class="active">WORK</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
   </header>
 
-
   <main class="work">
-    <h3>reference websites!</h3>
-
-        <h2>Hannah Myers website</p>
-
-
-
+    <h3>Featured Projects</h3>
+    <div class="project-grid">
+      <div class="project-box" data-description="A portfolio website for Hannah Myers, a local artist.">
+        <img src="./resources/images/hannah.jpg" alt="Hannah Myers website" />
+        <div class="project-desc"></div>
+      </div>
+      <div class="project-box" data-description="A works and exhibition page for Helen R Robertson, a local painter.">
+        <img src="./resources/images/helen.jpg" alt="Helen R Robertson website" />
+        <div class="project-desc"></div>
+      </div>
+      <div class="project-box" data-description="A works and sales page for Bobby Malcolms, a local resin pour tiles artist.">
+        <img src="./resources/images/bobby.png" alt="Bobby Malcolms website" />
+        <div class="project-desc"></div>
+      </div>
+      <div class="project-box" data-description="Placeholder!">
+        <img src="./resources/images/placeholder.png" alt="Project 4" />
+        <div class="project-desc"></div>
+      </div>
+    </div>
   </main>
+
+  <footer class="footer">
+    <p>© JTN</p>
+  </footer>
+  
+  <script>
+    // Expand hovered box and update text
+    document.querySelectorAll('.project-box').forEach(box => {
+      box.addEventListener('mouseenter', () => {
+        box.classList.add('expanded');
+        box.querySelector('.project-desc').textContent = box.getAttribute('data-description');
+      });
+      box.addEventListener('mouseleave', () => {
+        box.classList.remove('expanded');
+        box.querySelector('.project-desc').textContent = '';
+      });
+    });
+  </script>
+
 </body>
+</html>
