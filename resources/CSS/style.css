@@ -1,0 +1,45 @@
+
+/* sitewide */
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    height: 100%;
+  }
+
+/* HEADER and NAV styles, present on every page */
+header nav ul, body nav ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+nav a {
+  padding-right: 3.5rem;
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #cfd4c3;
+}
+
+
+/* BODY styles, baseline for every page */
+body {
+height: 100%;
+background-image: url("../images/background.jpeg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+
+/* FOOTER styles */
+.footer {
+  text-align: center;
+  color: #cfd4c3;
+}
